@@ -1,0 +1,30 @@
+[
+  {
+    "name": "Acolyte",
+    "rarity": "common",
+    "description": "You spent your early days in a religious monastery or cloister. You may have traveled out into the world to spread the message of your religion or because you cast away the teachings of your faith, but deep down you’ll always carry within you the lessons you learned. Choose two ability boosts. One must be to Intelligence or Wisdom, and one is a free ability boost. You're trained in the Religion skill, and the Scribing Lore skill. You gain the Student of the Canon skill feat.",
+    "ability_boosts": {
+      "number": 2,
+      "required": ["int", "wis"]
+    },
+    "skills": {
+      "trained": "religion",
+      "lore": "Scribing",
+      "feat": "Student of the Canon"
+    }
+  },
+  {
+    "name": "Guard",
+    "rarity": "common",
+    "description": "You served in the guard, out of either patriotism or the need for coin. Either way, you know how to get a difficult suspect to talk. However you left the guard, you might think of adventuring as a way to use your skills on a wider stage. Choose two ability boosts. One must be to Strength or Charisma, and one is a free ability boost. You're trained in the Intimidation skill, and the Legal Lore skill or Warfare Lore skill. You gain the Quick Coercion skill feat.",
+    "ability_boosts": {
+      "number": 2,
+      "required": ["str", "cha"]
+    },
+    "skills": {
+      "trained": "intimidation",
+      "lore": "Legal",
+      "feat": "Quick Coercio"
+    }
+  }
+]

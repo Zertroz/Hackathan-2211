@@ -1,0 +1,72 @@
+
+[
+  {
+    "name": "Human",
+    "hit_points": 8,
+    "size": "medium",
+    "speed": "25 feet",
+    "ability_boosts": ["free", "free"],
+    "languages": ["Common", "1 + intelligence modifier"],
+    "feats": {
+      "level_1": [
+        {
+          "name": "Natural Ambition",
+          "source": "Ancestry",
+          "rarity": "common",
+          "description": "You were raised to be ambitious and always reach for the stars, leading you to progress quickly in your chosen field. You gain a 1st-level class feat for your class. You must meet the prerequisites, but you can select the feat later in the character creation process in order to determine which prerequisites you meet.",
+          "after-lvl-1": true,
+          "gain": "class-feat"
+        },
+        {
+          "name": "Natural Skill",
+          "source": "Ancestry",
+          "rarity": "common",
+          "description": "Your ingenuity allows you to learn a wide variety of skills. You gain the trained proficiency rank in two skills of your choice.",
+          "after-lvl-1": true,
+          "gain": "two-skill"
+        },
+        {
+          "name": "Gloom Seer",
+          "source": "Ancestry",
+          "rarity": "common",
+          "prerequisites": "Nidalese ethnicity",
+          "description": "Gloom holds few terrors for you, and the pall of darkness over Nidal has made you comfortable in dim light. You gain low-light vision.",
+          "after-lvl-1": false,
+          "gain": "low-light-vision"
+        }
+      ]
+    }
+  },
+  {
+    "name": "Elf",
+    "hit_points": 6,
+    "size": "medium",
+    "speed": "30 feet",
+    "ability_boosts": ["dex", "int", "free"],
+    "ability_flaws": ["constitution"],
+    "languages": ["Common", "Elven", "int mod"],
+    "additional-traits": ["low-light-vision"],
+    "heritages": {
+      "Ancient Elf": {
+        "description": "In your long life, you've dabbled in many paths and many styles. A typical ancient elf is at least 100 years old, though you might be younger at the GM's discretion. Choose a class other than your own. You gain the multiclass dedication feat for that class, even though you don't meet its level prerequisite. You must still meet its other prerequisites to gain the feat.",
+        "gain": ["multiclass-dedication"]
+      },
+      "Arctic Elf": {
+        "description": "You dwell deep in the frozen north and have gained incredible resilience against cold environments, granting you cold resistance equal to half your level (minimum 1). You treat environmental cold effects as if they were one step less extreme (incredible cold becomes extreme, extreme cold becomes severe, and so on).",
+        "gain": ["resistance cold 1"]
+      } 
+    },
+    "feats": {
+      "level_1": [
+        {
+          "name": "Nimble Elf",
+          "source": "Ancestry",
+          "rarity": "common",
+          "description": "Your muscles are tightly honed. Your Speed increases by 5 feet.",
+          "after-lvl-1": true,
+          "gain": "+5 ft"
+        }
+      ]
+    }
+  }
+]

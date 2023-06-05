@@ -1,0 +1,62 @@
+[
+  {
+    "name": "Fighter",
+    "key_ability": ["str", "dex"],
+    "hit_points": 10,
+    "proficiencies": {
+      "perceptions": "expert",
+      "saving_throws": {
+        "fort": "expert",
+        "ref": "expert",
+        "will": "trained"
+      },
+      "skills": ["acrobatics", "athletics", 3],
+      "attacks": {
+        "simple": "expert",
+        "martial": "expert",
+        "special": "trained",
+        "unarmed": "expert"
+      },
+      "defense": {
+        "light": "trained",
+        "medium": "trained",
+        "heavy": "trained",
+        "unarmored": "trained"
+      },
+      "class-dc": "trained"
+    },
+    "features": {
+      "level_1": [
+        {
+          "name": "Attack of Opportunity",
+          "description": "Ever watchful for weaknesses, you can quickly attack foes that leave an opening in their defenses. You gain the Attack of Opportunity reaction.",
+          "gain": ["AoO"]
+        },
+        {
+          "name": "Shield Block",
+          "description": "You gain the Shield Block general feat, a reaction that lets you reduce damage with your shield.",
+          "gain": ["shield-block"]
+        }
+      ]
+    },
+    "feats": {
+      "level_1": [
+        {
+          "name": "Power Attack",
+          "source": "Class",
+          "rarity": "common",
+          "traits": ["flourish"],
+          "description": "You unleash a particularly powerful attack that clobbers your foe but leaves you a bit unsteady. Make a melee Strike. This counts as two attacks when calculating your multiple attack penalty. If this Strike hits, you deal an extra die of weapon damage. If you’re at least 10th level, increase this to two extra dice, and if you’re at least 18th level, increase it to three extra dice.",
+          "gain": ["power-attack"]
+        },
+        {
+          "name": "Point-Blank Shot",
+          "source": "Class",
+          "rarity": "common",
+          "traits": ["open", "stance"],
+          "description": "You take aim to pick off nearby enemies quickly. When using a ranged volley weapon while you are in this stance, you don't take the penalty to your attack rolls from the volley trait. When using a ranged weapon that doesn't have the volley trait, you gain a +2 circumstance bonus to damage rolls on attacks against targets within the weapon's first range increment."
+        }
+      ] 
+    }
+  }
+]

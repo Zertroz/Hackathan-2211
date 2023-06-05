@@ -1,25 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import { Container, Typography } from '@mui/material';
+import { useState } from 'react';
+import { Form } from './pages/Form';
+import { Route } from 'react-router-dom';
+import { Display } from './pages/Display';
 
 function App() {
+  const [character, setCharacter] = useState({});
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+    <Container>
+      <Typography 
+        variant='h1' 
+        sx={{ my: 4, textAlign: "center"}} 
+      >
+        Pathfinder Character Creator
+      </Typography>
+      <Route exact path='/' render={() =>
+        <Form
+          setCharacter={setCharacter}
         >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+        </Form>
+      } />
+      <Route exact path='/character/:id' render={() => 
+        <Display character={character}></Display>
+      } />
+    </Container>
+  )
 }
 
 export default App;
